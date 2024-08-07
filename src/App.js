@@ -1,6 +1,5 @@
 import React from 'react';
 import Homepage from './Components/Homepage';
-// import logo from './logo.svg';
 import FixedBottomNavigation from './Components/FixedBottomNavigation/FixedBottomNavigation';
 
 import './App.css';
