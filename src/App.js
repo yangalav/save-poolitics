@@ -23,6 +23,7 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <FixedBottomNavigation />
     </div>
   );
 }
