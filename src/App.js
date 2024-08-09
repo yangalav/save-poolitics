@@ -1,5 +1,6 @@
 import React from 'react';
 import Homepage from './Components/Homepage';
+import RotatingPoop from './Components/RotatingPoop';
 import FixedBottomNavigation from './Components/FixedBottomNavigation/FixedBottomNavigation';
 
 import './App.css';
@@ -22,6 +23,7 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <RotatingPoop />
       <FixedBottomNavigation />
     </div>
   );
