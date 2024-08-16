@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 // import RotatingPoop from './Components/RotatingPoop';
 import FixedBottomNavigation from './Components/FixedBottomNavigation/FixedBottomNavigation';
 
+import '@fontsource/figtree/700.css';
 import './App.css';
 function App() {
   return (
