@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import '@fontsource/figtree/700.css';
 import './index.css';
 import App from './App';
+import Home from './Components/Home/Home';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,13 +12,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (<App />),
+    // children: [
+    //   { index: true, element: <Home />},
+    // ],
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
