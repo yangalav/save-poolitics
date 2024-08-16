@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import '@fontsource/figtree/700.css';
 import './index.css';
 import App from './App';
+import Footer from './Components/Footer';
 import Home from './Components/Home/Home';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
@@ -22,6 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router}/>
+   <Footer />
   </React.StrictMode>
 );
 
