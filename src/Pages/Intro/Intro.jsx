@@ -20,6 +20,7 @@ export default function Intro() {
         })}
         <ButtonComponent
          label="Start"
+         href="/Election"
          buttonStyles={{ 
           color: 'white',
           backgroundColor: '#6C2023',
