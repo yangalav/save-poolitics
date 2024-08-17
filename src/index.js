@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import Footer from './Components/Footer';
 import Intro from './Pages/Intro/Intro.jsx';
+import Election from './Pages/Election/Election.jsx';
 import Home from './Pages/Home/Home.jsx';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "Intro",
     element: <Intro />,
+  },
+  {
+    path: "Election",
+    element: <Election />,
   },
 ]);
 
