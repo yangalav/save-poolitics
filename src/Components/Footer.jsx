@@ -7,7 +7,10 @@ export default function Footer() {
 
   return (
     <Box
-      sx={{ width: '100%', marginBottom: '2rem' }}
+      sx={{ 
+        width: '100%',
+        marginBottom: '2rem',
+      }}
       component="img"
       src={matches ? PoopMob : PoopMobSmall}
       alt=""
