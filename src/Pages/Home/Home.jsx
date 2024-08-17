@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import Box from '@mui/material/Box';
-import ButtonComponent from '../ButtonComponent';
-import Blurb from '../Blurb/Blurb';
+import ButtonComponent from '../../Components/ButtonComponent';
+import Blurb from '../../Components/Blurb/Blurb';
 import PruneHorns from '../../Assets/prune-horns.svg';
 
 import './Home.css';
@@ -52,18 +52,11 @@ export default function Home() {
         </Grid>
         <Grid>
           <ButtonComponent 
-            variant="contained"
             label="Save Poo-litics" 
+            href="/Intro"
             buttonStyles={{ 
-              padding: '16px 24px',
-              marginTop: 5,
-              fontWeight: 700,
-              borderRadius: '10px',
               color: 'white',
               backgroundColor: '#6C2023',
-              fontFamily: 'Figtree',
-              textTransform: 'none',
-              fontSize: '16px'
             }}
           />
         </Grid>
