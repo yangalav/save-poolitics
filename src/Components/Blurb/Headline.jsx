@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 
-export default function Headline({ headline }) {
+export default function Headline({ headline, styles }) {
   return (
     <>
       <Typography
@@ -10,6 +10,7 @@ export default function Headline({ headline }) {
           fontWeight: 700,
           color: '#6C2023',
           fontSize: '2.5rem',
+          ...styles
         }}>
         {headline}
       </Typography>
