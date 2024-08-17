@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import FixedBottomNavigation from './Components/FixedBottomNavigation/FixedBottomNavigation.js';
 // import '@fontsource/figtree/700.css';
 import './index.css';
 import App from './App';
 import Footer from './Components/Footer';
-import Home from './Components/Home/Home';
+import Intro from './Pages/Intro/Intro.jsx';
+import Home from './Pages/Home/Home.jsx';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,7 +18,11 @@ const router = createBrowserRouter([
     // children: [
     //   { index: true, element: <Home />},
     // ],
-  }
+  },
+  {
+    path: "Intro",
+    element: <Intro />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +30,7 @@ root.render(
   <React.StrictMode>
     <RouterProvider router={router}/>
    <Footer />
+   <FixedBottomNavigation />
   </React.StrictMode>
 );
 
