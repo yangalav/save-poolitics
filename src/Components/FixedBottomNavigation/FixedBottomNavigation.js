@@ -15,13 +15,14 @@ export default function FixedBottomNavigation() {
         <BottomNavigation
           showLabels
           value={value}
+          sx={{ justifyContent: 'space-between', height: '54px' }}
           onChange={(event, newValue) => {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Mute" />
-          <BottomNavigationAction label="Legal disclaimer if needed" />
-          <BottomNavigationAction label="More info" />
+          <BottomNavigationAction sx={{ fontFamily: 'Figtree', maxWidth: '1rem', fontSize: '16px' }} label="Mute" />
+          <BottomNavigationAction sx={{ fontFamily: 'Figtree', minWidth: '1rem', fontSize: '14px' }} label="Legal disclaimer if needed" />
+          <BottomNavigationAction sx={{ fontFamily: 'Figtree', maxWidth: '1rem', fontSize: '16px' }} label="More info" />
         </BottomNavigation>
       </Paper>
     </Box>
