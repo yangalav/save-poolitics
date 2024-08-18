@@ -7,7 +7,7 @@ import Blurb from '../../../Components/Blurb/Blurb';
 export default function BallotContent({ img, name, selectedCandidate, setSelectedCandidate }) {
   return (
     <Grid container direction="column" sx={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center' }}>
-      <Grid container direction="row" columnSpacing={3} sx={{ justifyContent: 'center', textAlign: 'center', alignItems: 'center', paddingTop: 1 }}>
+      <Grid container direction="row" columnSpacing={3} sx={{ maxWidth: 230, justifyContent: 'space-between', textAlign: 'center', alignItems: 'center', paddingTop: 1 }}>
         <Grid>
           <Box 
             sx={{ 
@@ -18,7 +18,7 @@ export default function BallotContent({ img, name, selectedCandidate, setSelecte
             src={img}
           />
         </Grid>
-        <Grid xs={2}>
+        <Grid xs={2} sx={{ textAlign: 'left' }}>
           <Blurb
             headline={name}
             headlineStyles={{ fontSize: '1rem' }}
