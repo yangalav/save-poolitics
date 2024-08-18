@@ -1,12 +1,13 @@
 import Button from '@mui/material/Button';
 
-export default function ButtonComponent({ href, buttonStyles, label }) {
+export default function ButtonComponent({ href, onClick, buttonStyles, label }) {
   return (
     <>
       <Button 
         disableElevation
         href={href}
         variant="contained"
+        onClick={onClick}
         sx={{ 
           fontFamily: 'Figtree',
           fontSize: '16px',
