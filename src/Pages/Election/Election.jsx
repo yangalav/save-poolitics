@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
+import Ballot from './Ballot/Ballot';
 import Blurb from "../../Components/Blurb/Blurb";
 import Card from './Card';
 import ButtonComponent from '../../Components/ButtonComponent';
@@ -17,6 +19,10 @@ const candidates = [
 ];
 
 export default function Election() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <Box sx={{ justifyContent: 'center', textAlign: 'center', paddingTop: 10 }}>
       <Grid container columnSpacing={3} rowSpacing={3} direction="column">
@@ -34,7 +40,7 @@ export default function Election() {
         <Grid>
           <ButtonComponent
             label="Ballot"
-            href="/Election"
+            onClick={handleOpen}
             buttonStyles={{
               color: 'white',
               backgroundColor: '#6C2023',
@@ -43,6 +49,7 @@ export default function Election() {
           />
         </Grid>
       </Grid>
+      <Ballot open={open} handleClose={handleClose} />
     </Box>
   )
 }
