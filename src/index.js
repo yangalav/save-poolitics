@@ -9,7 +9,9 @@ import Footer from './Components/Footer';
 import Intro from './Pages/Intro/Intro.jsx';
 import Election from './Pages/Election/Election.jsx';
 import Results from './Pages/Results/Results.jsx';
+import Transition from './Pages/Transition.jsx';
 import Home from './Pages/Home/Home.jsx';
+import { transition1Data } from './Pages/Data/transitionData.js';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -32,7 +34,11 @@ const router = createBrowserRouter([
   {
     path: "Results",
     element: <Results />,
-  }
+  },
+  {
+    path: "Transition1",
+    element: <Transition data={transition1Data} />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
