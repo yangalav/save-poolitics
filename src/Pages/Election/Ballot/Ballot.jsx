@@ -1,7 +1,6 @@
 import { useState} from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
@@ -77,6 +76,7 @@ export default function Ballot({ open, handleClose }) {
             <Grid>
               <ButtonComponent
                 label="Vote"
+                href="/Results"
                 buttonStyles={{
                   color: 'white',
                   backgroundColor: '#6C2023',
