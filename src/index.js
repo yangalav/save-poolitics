@@ -5,13 +5,14 @@ import FixedBottomNavigation from './Components/FixedBottomNavigation/FixedBotto
 // import '@fontsource/figtree/700.css';
 import './index.css';
 import App from './App';
+import Content from './Components/Content/Content.jsx';
 import Footer from './Components/Footer';
 import Intro from './Pages/Intro/Intro.jsx';
 import Election from './Pages/Election/Election.jsx';
 import Results from './Pages/Results/Results.jsx';
 import Transition from './Pages/Transition.jsx';
 import Home from './Pages/Home/Home.jsx';
-import { transition1Data } from './Pages/Data/transitionData.js';
+import { transition1Data } from './Pages/data.js';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
   },
   {
     path: "Transition1",
+    element: <Content {...transition1Data} />,
+  },
     element: <Transition data={transition1Data} />,
   },
 ]);
