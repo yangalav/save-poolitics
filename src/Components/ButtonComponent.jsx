@@ -1,10 +1,11 @@
 import Button from '@mui/material/Button';
 
-export default function ButtonComponent({ href, onClick, buttonStyles, label }) {
+export default function ButtonComponent({ href, onClick, buttonStyles, label, disabled }) {
   return (
     <>
       <Button 
         disableElevation
+        disabled={disabled}
         href={href}
         variant="contained"
         onClick={onClick}
