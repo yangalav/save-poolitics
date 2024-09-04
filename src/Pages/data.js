@@ -1,4 +1,5 @@
 import PruneHorns from '../Assets/prune-horns.svg';
+import BreakingNewsPlaceholder from '../Assets/BreakingNewsPlaceholder.png';
 
 export const transition1Data = {
   img: PruneHorns,
@@ -18,18 +19,13 @@ export const transition1Data = {
 };
 
 export const breakingNewsData = {
-  img: PruneHorns,
-  headline: 'Poo-litics was overrun by sh*t',
-  description: 'Sh*tizens Oh no! Same old sh*t. Looks like Pool-itics is over.',
+  img: BreakingNewsPlaceholder,
+  headline: 'Breaking News!',
+  description: 'Update about new election mechanic',
   buttons: [
     {
-      buttonLabel: 'Try Again',
-      href: '/Election',
-      disabled: true
-    },
-    {
-      buttonLabel: 'Save Poo-litics',
-      href: '/BreakingNews',
+      buttonLabel: 'Try rank choice voting',
+      href: '/ElectionRCV',
     }
   ]
 };
