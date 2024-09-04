@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import ButtonComponent from '../ButtonComponent';
 import Blurb from '../Blurb/Blurb';
 
-export default function Content({ img, headline, description, footNote, buttonLabel }) {
+export default function Content({ img, headline, description, footNote, buttons }) {
   return (
     <>
       <Box
@@ -37,15 +37,22 @@ export default function Content({ img, headline, description, footNote, buttonLa
               />
             </Grid>
           }
-          <Grid>
-            <ButtonComponent
-              label={buttonLabel}
-              href="/Intro"
-              buttonStyles={{
-                color: 'white',
-                backgroundColor: '#6C2023',
-              }}
-            />
+          <Grid container sx={{ flexGrow: 1, justifyContent: 'center', textAlign: 'center' }} spacing={3}>
+            {buttons.map((button) => {
+              const { buttonLabel, href, disabled } = button;
+              return (
+                <Grid item>
+                  <ButtonComponent
+                    label={buttonLabel}
+                    href={href}
+                    disabled={disabled}
+                    buttonStyles={{
+                      color: 'white',
+                      backgroundColor: '#6C2023',
+                    }}
+                  />
+                </Grid>)
+            })}
           </Grid>
         </Grid>
       </Box>
