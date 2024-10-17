@@ -1,7 +1,8 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-import Home from './Components/Home/Home';
+import Home from './Pages/Home/Home.jsx';
+import Intro from './Pages/Intro/Intro.jsx';
 // import RotatingPoop from './Components/RotatingPoop';
 import FixedBottomNavigation from './Components/FixedBottomNavigation/FixedBottomNavigation';
 
@@ -12,9 +13,7 @@ function App() {
     <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center', textAlign: 'center' }}>
       <Grid>
         <Home />
-      </Grid>
-      <Grid>
-        <FixedBottomNavigation />
+        {/* <Intro /> */}
       </Grid>
     </Box>
   );
