@@ -18,6 +18,7 @@
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-router-dom": "^6.26.0",
     "react-scripts": "5.0.1",
+    "vite": "^5.4.9",
     "web-vitals": "^2.1.4",
     "workbox-background-sync": "^6.6.0",
     "workbox-broadcast-update": "^6.6.0",
@@ -40,7 +41,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preview": "vite preview --port 8080"
   },
   "eslintConfig": {
     "extends": [
